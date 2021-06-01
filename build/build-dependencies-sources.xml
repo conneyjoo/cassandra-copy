@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-dependencies" default="init-dependencies">
+<target name="init-dependencies">
+    <echo level="info" message="Loading dependency paths from file: /root/Documents/java-work/cassandra-trunk/build/build-dependencies-sources.xml"/>
+    <property name="junit:junit:jar" value="/root/.m2/repository/junit/junit/4.12/junit-4.12.jar"/>
+    <fileset id="junit:junit:jar" dir="/root/.m2/repository/junit/junit/4.12">
+      <include name="junit-4.12.jar"/>
+    </fileset>
+    <property name="org.hamcrest:hamcrest-core:jar" value="/root/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar"/>
+    <fileset id="org.hamcrest:hamcrest-core:jar" dir="/root/.m2/repository/org/hamcrest/hamcrest-core/1.3">
+      <include name="hamcrest-core-1.3.jar"/>
+    </fileset>
+    <property name="org.mockito:mockito-core:jar" value="/root/.m2/repository/org/mockito/mockito-core/3.2.4/mockito-core-3.2.4.jar"/>
+    <fileset id="org.mockito:mockito-core:jar" dir="/root/.m2/repository/org/mockito/mockito-core/3.2.4">
+      <include name="mockito-core-3.2.4.jar"/>
+    </fileset>
+    <property name="net.bytebuddy:byte-buddy:jar" value="/root/.m2/repository/net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5.jar"/>
+    <fileset id="net.bytebuddy:byte-buddy:jar" dir="/root/.m2/repository/net/bytebuddy/byte-buddy/1.10.5">
+      <include name="byte-buddy-1.10.5.jar"/>
+    </fileset>
+    <property name="net.bytebuddy:byte-buddy-agent:jar" value="/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.5/byte-buddy-agent-1.10.5.jar"/>
+    <fileset id="net.bytebuddy:byte-buddy-agent:jar" dir="/root/.m2/repository/net/bytebuddy/byte-buddy-agent/1.10.5">
+      <include name="byte-buddy-agent-1.10.5.jar"/>
+    </fileset>
+    <property name="org.objenesis:objenesis:jar" value="/root/.m2/repository/org/objenesis/objenesis/2.6/objenesis-2.6.jar"/>
+    <fileset id="org.objenesis:objenesis:jar" dir="/root/.m2/repository/org/objenesis/objenesis/2.6">
+      <include name="objenesis-2.6.jar"/>
+    </fileset>
+    <property name="org.reflections:reflections:jar" value="/root/.m2/repository/org/reflections/reflections/0.9.12/reflections-0.9.12.jar"/>
+    <fileset id="org.reflections:reflections:jar" dir="/root/.m2/repository/org/reflections/reflections/0.9.12">
+      <include name="reflections-0.9.12.jar"/>
+    </fileset>
+    <property name="org.javassist:javassist:jar" value="/root/.m2/repository/org/javassist/javassist/3.26.0-GA/javassist-3.26.0-GA.jar"/>
+    <fileset id="org.javassist:javassist:jar" dir="/root/.m2/repository/org/javassist/javassist/3.26.0-GA">
+      <include name="javassist-3.26.0-GA.jar"/>
+    </fileset>
+    <property name="com.datastax.cassandra:cassandra-driver-core:jar:shaded" value="/root/.m2/repository/com/datastax/cassandra/cassandra-driver-core/3.11.0/cassandra-driver-core-3.11.0-shaded.jar"/>
+    <fileset id="com.datastax.cassandra:cassandra-driver-core:jar:shaded" dir="/root/.m2/repository/com/datastax/cassandra/cassandra-driver-core/3.11.0">
+      <include name="cassandra-driver-core-3.11.0-shaded.jar"/>
+    </fileset>
+    <property name="com.google.guava:guava:jar" value="/root/.m2/repository/com/google/guava/guava/19.0/guava-19.0.jar"/>
+    <fileset id="com.google.guava:guava:jar" dir="/root/.m2/repository/com/google/guava/guava/19.0">
+      <include name="guava-19.0.jar"/>
+    </fileset>
+    <property name="io.dropwizard.metrics:metrics-core:jar" value="/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.2.2/metrics-core-3.2.2.jar"/>
+    <fileset id="io.dropwizard.metrics:metrics-core:jar" dir="/root/.m2/repository/io/dropwizard/metrics/metrics-core/3.2.2">
+      <include name="metrics-core-3.2.2.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jnr-ffi:jar" value="/root/.m2/repository/com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7.jar"/>
+    <fileset id="com.github.jnr:jnr-ffi:jar" dir="/root/.m2/repository/com/github/jnr/jnr-ffi/2.1.7">
+      <include name="jnr-ffi-2.1.7.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jffi:jar" value="/root/.m2/repository/com/github/jnr/jffi/1.2.16/jffi-1.2.16.jar"/>
+    <fileset id="com.github.jnr:jffi:jar" dir="/root/.m2/repository/com/github/jnr/jffi/1.2.16">
+      <include name="jffi-1.2.16.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jffi:jar:native" value="/root/.m2/repository/com/github/jnr/jffi/1.2.16/jffi-1.2.16-native.jar"/>
+    <fileset id="com.github.jnr:jffi:jar:native" dir="/root/.m2/repository/com/github/jnr/jffi/1.2.16">
+      <include name="jffi-1.2.16-native.jar"/>
+    </fileset>
+    <property name="org.ow2.asm:asm:jar" value="/root/.m2/repository/org/ow2/asm/asm/5.0.3/asm-5.0.3.jar"/>
+    <fileset id="org.ow2.asm:asm:jar" dir="/root/.m2/repository/org/ow2/asm/asm/5.0.3">
+      <include name="asm-5.0.3.jar"/>
+    </fileset>
+    <property name="org.ow2.asm:asm-commons:jar" value="/root/.m2/repository/org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3.jar"/>
+    <fileset id="org.ow2.asm:asm-commons:jar" dir="/root/.m2/repository/org/ow2/asm/asm-commons/5.0.3">
+      <include name="asm-commons-5.0.3.jar"/>
+    </fileset>
+    <property name="org.ow2.asm:asm-tree:jar" value="/root/.m2/repository/org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3.jar"/>
+    <fileset id="org.ow2.asm:asm-tree:jar" dir="/root/.m2/repository/org/ow2/asm/asm-tree/5.0.3">
+      <include name="asm-tree-5.0.3.jar"/>
+    </fileset>
+    <property name="org.ow2.asm:asm-analysis:jar" value="/root/.m2/repository/org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3.jar"/>
+    <fileset id="org.ow2.asm:asm-analysis:jar" dir="/root/.m2/repository/org/ow2/asm/asm-analysis/5.0.3">
+      <include name="asm-analysis-5.0.3.jar"/>
+    </fileset>
+    <property name="org.ow2.asm:asm-util:jar" value="/root/.m2/repository/org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3.jar"/>
+    <fileset id="org.ow2.asm:asm-util:jar" dir="/root/.m2/repository/org/ow2/asm/asm-util/5.0.3">
+      <include name="asm-util-5.0.3.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jnr-x86asm:jar" value="/root/.m2/repository/com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2.jar"/>
+    <fileset id="com.github.jnr:jnr-x86asm:jar" dir="/root/.m2/repository/com/github/jnr/jnr-x86asm/1.0.2">
+      <include name="jnr-x86asm-1.0.2.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jnr-posix:jar" value="/root/.m2/repository/com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44.jar"/>
+    <fileset id="com.github.jnr:jnr-posix:jar" dir="/root/.m2/repository/com/github/jnr/jnr-posix/3.0.44">
+      <include name="jnr-posix-3.0.44.jar"/>
+    </fileset>
+    <property name="com.github.jnr:jnr-constants:jar" value="/root/.m2/repository/com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9.jar"/>
+    <fileset id="com.github.jnr:jnr-constants:jar" dir="/root/.m2/repository/com/github/jnr/jnr-constants/0.9.9">
+      <include name="jnr-constants-0.9.9.jar"/>
+    </fileset>
+    <property name="com.fasterxml.jackson.core:jackson-databind:jar" value="/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.9.3/jackson-databind-2.7.9.3.jar"/>
+    <fileset id="com.fasterxml.jackson.core:jackson-databind:jar" dir="/root/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.9.3">
+      <include name="jackson-databind-2.7.9.3.jar"/>
+    </fileset>
+    <property name="com.fasterxml.jackson.core:jackson-annotations:jar" value="/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0.jar"/>
+    <fileset id="com.fasterxml.jackson.core:jackson-annotations:jar" dir="/root/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.0">
+      <include name="jackson-annotations-2.7.0.jar"/>
+    </fileset>
+    <property name="com.fasterxml.jackson.core:jackson-core:jar" value="/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9.jar"/>
+    <fileset id="com.fasterxml.jackson.core:jackson-core:jar" dir="/root/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.9">
+      <include name="jackson-core-2.7.9.jar"/>
+    </fileset>
+    <property name="io.netty:netty-bom:pom" value="/root/.m2/repository/io/netty/netty-bom/4.1.58.Final/netty-bom-4.1.58.Final.pom"/>
+    <fileset id="io.netty:netty-bom:pom" dir="/root/.m2/repository/io/netty/netty-bom/4.1.58.Final">
+      <include name="netty-bom-4.1.58.Final.pom"/>
+    </fileset>
+    <property name="io.netty:netty-all:jar" value="/root/.m2/repository/io/netty/netty-all/4.1.58.Final/netty-all-4.1.58.Final.jar"/>
+    <fileset id="io.netty:netty-all:jar" dir="/root/.m2/repository/io/netty/netty-all/4.1.58.Final">
+      <include name="netty-all-4.1.58.Final.jar"/>
+    </fileset>
+    <property name="org.eclipse.jdt.core.compiler:ecj:jar" value="/root/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1.jar"/>
+    <fileset id="org.eclipse.jdt.core.compiler:ecj:jar" dir="/root/.m2/repository/org/eclipse/jdt/core/compiler/ecj/4.6.1">
+      <include name="ecj-4.6.1.jar"/>
+    </fileset>
+    <property name="org.caffinitas.ohc:ohc-core:jar" value="/root/.m2/repository/org/caffinitas/ohc/ohc-core/0.5.1/ohc-core-0.5.1.jar"/>
+    <fileset id="org.caffinitas.ohc:ohc-core:jar" dir="/root/.m2/repository/org/caffinitas/ohc/ohc-core/0.5.1">
+      <include name="ohc-core-0.5.1.jar"/>
+    </fileset>
+    <property name="net.java.dev.jna:jna:jar" value="/root/.m2/repository/net/java/dev/jna/jna/4.1.0/jna-4.1.0.jar"/>
+    <fileset id="net.java.dev.jna:jna:jar" dir="/root/.m2/repository/net/java/dev/jna/jna/4.1.0">
+      <include name="jna-4.1.0.jar"/>
+    </fileset>
+    <property name="org.openjdk.jmh:jmh-core:jar" value="/root/.m2/repository/org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21.jar"/>
+    <fileset id="org.openjdk.jmh:jmh-core:jar" dir="/root/.m2/repository/org/openjdk/jmh/jmh-core/1.21">
+      <include name="jmh-core-1.21.jar"/>
+    </fileset>
+    <property name="net.sf.jopt-simple:jopt-simple:jar" value="/root/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6.jar"/>
+    <fileset id="net.sf.jopt-simple:jopt-simple:jar" dir="/root/.m2/repository/net/sf/jopt-simple/jopt-simple/4.6">
+      <include name="jopt-simple-4.6.jar"/>
+    </fileset>
+    <property name="org.apache.commons:commons-math3:jar" value="/root/.m2/repository/org/apache/commons/commons-math3/3.2/commons-math3-3.2.jar"/>
+    <fileset id="org.apache.commons:commons-math3:jar" dir="/root/.m2/repository/org/apache/commons/commons-math3/3.2">
+      <include name="commons-math3-3.2.jar"/>
+    </fileset>
+    <property name="org.openjdk.jmh:jmh-generator-annprocess:jar" value="/root/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.21/jmh-generator-annprocess-1.21.jar"/>
+    <fileset id="org.openjdk.jmh:jmh-generator-annprocess:jar" dir="/root/.m2/repository/org/openjdk/jmh/jmh-generator-annprocess/1.21">
+      <include name="jmh-generator-annprocess-1.21.jar"/>
+    </fileset>
+    <property name="net.ju-n.compile-command-annotations:compile-command-annotations:jar" value="/root/.m2/repository/net/ju-n/compile-command-annotations/compile-command-annotations/1.2.0/compile-command-annotations-1.2.0.jar"/>
+    <fileset id="net.ju-n.compile-command-annotations:compile-command-annotations:jar" dir="/root/.m2/repository/net/ju-n/compile-command-annotations/compile-command-annotations/1.2.0">
+      <include name="compile-command-annotations-1.2.0.jar"/>
+    </fileset>
+    <property name="org.apache.ant:ant-junit:jar" value="/root/.m2/repository/org/apache/ant/ant-junit/1.9.7/ant-junit-1.9.7.jar"/>
+    <fileset id="org.apache.ant:ant-junit:jar" dir="/root/.m2/repository/org/apache/ant/ant-junit/1.9.7">
+      <include name="ant-junit-1.9.7.jar"/>
+    </fileset>
+    <property name="org.apache.ant:ant:jar" value="/root/.m2/repository/org/apache/ant/ant/1.9.7/ant-1.9.7.jar"/>
+    <fileset id="org.apache.ant:ant:jar" dir="/root/.m2/repository/org/apache/ant/ant/1.9.7">
+      <include name="ant-1.9.7.jar"/>
+    </fileset>
+    <property name="org.apache.ant:ant-launcher:jar" value="/root/.m2/repository/org/apache/ant/ant-launcher/1.9.7/ant-launcher-1.9.7.jar"/>
+    <fileset id="org.apache.ant:ant-launcher:jar" dir="/root/.m2/repository/org/apache/ant/ant-launcher/1.9.7">
+      <include name="ant-launcher-1.9.7.jar"/>
+    </fileset>
+    <property name="org.assertj:assertj-core:jar" value="/root/.m2/repository/org/assertj/assertj-core/3.15.0/assertj-core-3.15.0.jar"/>
+    <fileset id="org.assertj:assertj-core:jar" dir="/root/.m2/repository/org/assertj/assertj-core/3.15.0">
+      <include name="assertj-core-3.15.0.jar"/>
+    </fileset>
+    <property name="org.awaitility:awaitility:jar" value="/root/.m2/repository/org/awaitility/awaitility/4.0.3/awaitility-4.0.3.jar"/>
+    <fileset id="org.awaitility:awaitility:jar" dir="/root/.m2/repository/org/awaitility/awaitility/4.0.3">
+      <include name="awaitility-4.0.3.jar"/>
+    </fileset>
+    <property name="org.hamcrest:hamcrest:jar" value="/root/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar"/>
+    <fileset id="org.hamcrest:hamcrest:jar" dir="/root/.m2/repository/org/hamcrest/hamcrest/2.1">
+      <include name="hamcrest-2.1.jar"/>
+    </fileset>
+    <fileset id="build-dependency-sources" dir="/root/.m2/repository">
+      <include name="com/datastax/cassandra/cassandra-driver-core/3.11.0/cassandra-driver-core-3.11.0-sources.jar"/>
+      <include name="com/fasterxml/jackson/core/jackson-annotations/2.7.0/jackson-annotations-2.7.0-sources.jar"/>
+      <include name="com/fasterxml/jackson/core/jackson-core/2.7.9/jackson-core-2.7.9-sources.jar"/>
+      <include name="com/fasterxml/jackson/core/jackson-databind/2.7.9.3/jackson-databind-2.7.9.3-sources.jar"/>
+      <include name="com/github/jnr/jffi/1.2.16/jffi-1.2.16-sources.jar"/>
+      <include name="com/github/jnr/jnr-constants/0.9.9/jnr-constants-0.9.9-sources.jar"/>
+      <include name="com/github/jnr/jnr-ffi/2.1.7/jnr-ffi-2.1.7-sources.jar"/>
+      <include name="com/github/jnr/jnr-posix/3.0.44/jnr-posix-3.0.44-sources.jar"/>
+      <include name="com/github/jnr/jnr-x86asm/1.0.2/jnr-x86asm-1.0.2-sources.jar"/>
+      <include name="com/google/guava/guava/19.0/guava-19.0-sources.jar"/>
+      <include name="io/dropwizard/metrics/metrics-core/3.2.2/metrics-core-3.2.2-sources.jar"/>
+      <include name="io/netty/netty-all/4.1.58.Final/netty-all-4.1.58.Final-sources.jar"/>
+      <include name="io/netty/netty-bom/4.1.58.Final/netty-bom-4.1.58.Final-sources.jar"/>
+      <include name="junit/junit/4.12/junit-4.12-sources.jar"/>
+      <include name="net/bytebuddy/byte-buddy-agent/1.10.5/byte-buddy-agent-1.10.5-sources.jar"/>
+      <include name="net/bytebuddy/byte-buddy/1.10.5/byte-buddy-1.10.5-sources.jar"/>
+      <include name="net/java/dev/jna/jna/4.1.0/jna-4.1.0-sources.jar"/>
+      <include name="net/ju-n/compile-command-annotations/compile-command-annotations/1.2.0/compile-command-annotations-1.2.0-sources.jar"/>
+      <include name="net/sf/jopt-simple/jopt-simple/4.6/jopt-simple-4.6-sources.jar"/>
+      <include name="org/apache/ant/ant-junit/1.9.7/ant-junit-1.9.7-sources.jar"/>
+      <include name="org/apache/ant/ant-launcher/1.9.7/ant-launcher-1.9.7-sources.jar"/>
+      <include name="org/apache/ant/ant/1.9.7/ant-1.9.7-sources.jar"/>
+      <include name="org/apache/commons/commons-math3/3.2/commons-math3-3.2-sources.jar"/>
+      <include name="org/assertj/assertj-core/3.15.0/assertj-core-3.15.0-sources.jar"/>
+      <include name="org/awaitility/awaitility/4.0.3/awaitility-4.0.3-sources.jar"/>
+      <include name="org/caffinitas/ohc/ohc-core/0.5.1/ohc-core-0.5.1-sources.jar"/>
+      <include name="org/eclipse/jdt/core/compiler/ecj/4.6.1/ecj-4.6.1-sources.jar"/>
+      <include name="org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3-sources.jar"/>
+      <include name="org/hamcrest/hamcrest/2.1/hamcrest-2.1-sources.jar"/>
+      <include name="org/javassist/javassist/3.26.0-GA/javassist-3.26.0-GA-sources.jar"/>
+      <include name="org/mockito/mockito-core/3.2.4/mockito-core-3.2.4-sources.jar"/>
+      <include name="org/objenesis/objenesis/2.6/objenesis-2.6-sources.jar"/>
+      <include name="org/openjdk/jmh/jmh-core/1.21/jmh-core-1.21-sources.jar"/>
+      <include name="org/openjdk/jmh/jmh-generator-annprocess/1.21/jmh-generator-annprocess-1.21-sources.jar"/>
+      <include name="org/ow2/asm/asm-analysis/5.0.3/asm-analysis-5.0.3-sources.jar"/>
+      <include name="org/ow2/asm/asm-commons/5.0.3/asm-commons-5.0.3-sources.jar"/>
+      <include name="org/ow2/asm/asm-tree/5.0.3/asm-tree-5.0.3-sources.jar"/>
+      <include name="org/ow2/asm/asm-util/5.0.3/asm-util-5.0.3-sources.jar"/>
+      <include name="org/ow2/asm/asm/5.0.3/asm-5.0.3-sources.jar"/>
+      <include name="org/reflections/reflections/0.9.12/reflections-0.9.12-sources.jar"/>
+    </fileset>
+  </target>
+</project>
